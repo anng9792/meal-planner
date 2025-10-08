@@ -2,9 +2,8 @@ function Gallery() {
   return (
     <div id="gallery">
       <h2>Gallery</h2>
-      {/* Recipe images will go here */}
+      <p>Recipes will show here...</p>
     </div>
   )
 }
-
-export default Gallery   // 👈 this is required
+export default Gallery

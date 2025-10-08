@@ -18,48 +18,42 @@ function Searchbar() {
   }
 
   const toggleFilter = (filter) => {
-    if (filters.includes(filter)) {
-      setFilters(filters.filter(f => f !== filter))
-    } else {
-      setFilters([...filters, filter])
-    }
+    setFilters(
+      filters.includes(filter)
+        ? filters.filter(f => f !== filter)
+        : [...filters, filter]
+    )
   }
 
   return (
     <div className="search-container">
-      {/* Search row */}
       <div className="search-bar-row">
-        <input 
-          type="text"
-          id="recipe-search"
-          placeholder="Search recipes..."
-        />
+        <input type="text" id="recipe-search" placeholder="Search recipes..." />
         <button id="search-btn">Search</button>
       </div>
 
-      {/* Ingredient entry */}
       <div className="ingredient-input">
-        <input 
+        <input
           type="text"
           id="ingredient-entry"
-          placeholder="Add ingredients you already have (press Enter)"
+          placeholder="Add ingredients (press Enter)"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyPress}
         />
         <div id="ingredient-list">
-          {ingredients.map((ingredient, index) => (
-            <div key={index} className="ingredient-tag">
-              {ingredient} <span onClick={() => removeIngredient(ingredient)}>&times;</span>
+          {ingredients.map((ingredient, i) => (
+            <div key={i} className="ingredient-tag">
+              {ingredient}
+              <span onClick={() => removeIngredient(ingredient)}>&times;</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Filter buttons */}
       <div className="filters">
-        {['Vegan','Vegetarian','High Protein','Quick','Budget-Friendly','Top-Rated'].map((filter) => (
-          <button 
+        {['Vegan','Vegetarian','High Protein','Quick','Budget-Friendly','Top-Rated'].map(filter => (
+          <button
             key={filter}
             className={`filter-btn ${filters.includes(filter) ? 'active' : ''}`}
             onClick={() => toggleFilter(filter)}
@@ -72,4 +66,4 @@ function Searchbar() {
   )
 }
 
-export default Search-bar
+export default Searchbar
