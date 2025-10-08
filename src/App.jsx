@@ -1,6 +1,6 @@
-import Searchbar from './components/Search-bar'
+import Search-bar from './components/Search-bar'
 import Gallery from './components/Gallery'
-import RecipeCard from './components/Recipe-card'
+import Recipe-card from './components/Recipe-card'
 import './index.css'
 
 function App() {
