@@ -1,9 +1,10 @@
 function RecipeCard() {
   return (
     <div id="recipe-card">
-      <h3>Sample Recipe</h3>
-      <p>Recipe details will appear here...</p>
+      <h3>Recipe Title</h3>
+      <p>Recipe description goes here...</p>
     </div>
   )
 }
+
 export default RecipeCard
