@@ -17,6 +17,11 @@ h1 {
   letter-spacing: -0.5px;
 }
 
+/* Gallery Title */
+h2 {
+  text-align: center;
+}
+
 /* Search container */
 .search-container {
   background: #fff;
@@ -142,4 +147,30 @@ h1 {
 #search-btn:hover {
   background: #388e3c; /* darker green */
   box-shadow: 0 3px 8px rgba(67,160,71,0.3);
+}
+
+/* Gallery */
+#gallery{
+  display: "grid";
+  grid-template-columns: 60px 60px;
+  gap: 20px;
+}
+
+#gallery_card {
+  border: 5px;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+#gallery_card:hover {
+  background: #7732b0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+img{
+  width: 400px;
+  height: 400px;
 }
