@@ -27,6 +27,12 @@ function Gallery() {
       image: "https://cincyshopper.com/wp-content/uploads/2016/02/Homemade-Hamburger-Helper-Beef-Noodle-5.jpg",
       cookTime: "30 Mins",
     },
+    {
+      id: 5,
+      title: "Egg Drop Soup",
+      image: "https://www.simplyrecipes.com/thmb/6Io-hAv2SlgASdSfhYBxzidrdfk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Egg-Drop-Soup-LEAD-4-9a3dfd9a00834fe29d2424cb74d06780.jpg",
+      cookTime: "20 Mins",
+    },
   ];
   
   return (
