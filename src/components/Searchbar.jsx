@@ -1,9 +1,14 @@
 import { useState } from 'react'
 
-function Searchbar() {
+function Searchbar({ onSearch }) {
   const [ingredients, setIngredients] = useState([])
   const [inputValue, setInputValue] = useState('')
   const [filters, setFilters] = useState([])
+  const [query, setQuery] = useState('')
+
+const handleSearch = () => {
+  onSearch({ query, ingredients, filters })
+}
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && inputValue.trim() !== '') {
@@ -28,8 +33,16 @@ function Searchbar() {
   return (
     <div className="search-container">
       <div className="search-bar-row">
-        <input type="text" id="recipe-search" placeholder="Search recipes..." />
-        <button id="search-btn">Search</button>
+        <input 
+        type="text" 
+        id="recipe-search" 
+        placeholder="Search recipes..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        />
+        <button 
+        id="search-btn"
+        onClick={handleSearch}>Search</button>
       </div>
 
       <div className="ingredient-input">
