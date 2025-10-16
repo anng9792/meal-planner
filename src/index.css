@@ -173,3 +173,49 @@ h2 {
   object-fit: cover;           /* keeps images cropped nicely */
   border-radius: 8px;
 }
+
+.gallery_card:hover {
+  background-color: #f3e8ff; /* light purple */
+  transition: background-color 0.3s ease;
+}
+
+.recipe-card {
+  position: relative;
+  width: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.hover-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.hover-buttons button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hover-buttons button:hover {
+  background: #f0f0f0;
+}

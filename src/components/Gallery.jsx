@@ -1,3 +1,5 @@
+import RecipeCard from "./RecipeCard";
+
 function Gallery({ results }) {
   return (
     <div id="gallery" className="gallery">
