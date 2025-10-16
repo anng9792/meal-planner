@@ -65,7 +65,7 @@ const handleSearch = () => {
       </div>
 
       <div className="filters">
-        {['Vegan','Vegetarian','High Protein','Quick','Budget-Friendly','Top-Rated'].map(filter => (
+        {['Vegan','Vegetarian','High Protein','Quick','Budget-Friendly','Top-Rated', 'Show All'].map(filter => (
           <button
             key={filter}
             className={`filter-btn ${filters.includes(filter) ? 'active' : ''}`}
