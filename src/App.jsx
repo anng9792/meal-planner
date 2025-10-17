@@ -29,11 +29,7 @@ function App() {
       title: "Katsudon",
       image: "https://doobydobap.com/wp-content/uploads/2021/08/IMG_0846-1688x2048.jpg",
       cookTime: "15 Mins",
-<<<<<<< HEAD
       type: ["High Protein", "Budget-Friendly", "Top-Rated", "Show All"],
-=======
-      type: ["High Protein", "Budget-Friendly", "Top-Rated", "Quick"],
->>>>>>> 6194f46baa77b983111818c0de3e24e2a018ed05
       link: "https://doobydobap.com/recipe/katsudon"
     },
 
