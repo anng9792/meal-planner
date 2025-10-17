@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Searchbar from './components/Searchbar'
 import Gallery from './components/Gallery'
-import RecipeCard from './components/RecipeCard'
+import RecipeCard from './components/Recipecard'
 import './index.css'
 
 function App() {
