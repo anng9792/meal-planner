@@ -86,6 +86,69 @@ function App() {
       type: ["Quick"],
       link: "https://caitsplate.com/cooks-illustrated-ultimate-chocolate-chip-cookies/#tasty-recipes-31625-jump-target"
     },
+
+    {
+      id: 10,
+      title: "Vegan Fajitas",
+      image: "https://www.feastingathome.com/wp-content/uploads/2024/10/Vegan-Fajitas-13.jpg",
+      cookTime: "1 Hour, 5 Mins",
+      type: ["Vegan","Vegetarian","Budget-Friendly" ],
+      link: "https://www.feastingathome.com/vegan-fajitas/#tasty-recipes-82245-jump-target"
+    },
+
+    {
+      id: 11,
+      title: "Chipotle Portobello Mushroom Tacos",
+      image: "https://www.feastingathome.com/wp-content/uploads/2018/03/Sheet-Pan-Portobello-Tacos-207.jpg",
+      cookTime: "30 Mins",
+      type: ["Vegan","Vegetarian","Budget-Friendly"],
+      link: "https://www.feastingathome.com/chipotle-portobello-tacos/#tasty-recipes-21231-jump-target"
+    },
+
+    {
+      id: 12,
+      title: "Vegan Tiramisu",
+      image: "https://thebananadiaries.com/wp-content/uploads/2023/10/vegan-tiramisu-recipe_7362.jpg",
+      cookTime: "40 Mins",
+      type: ["Vegan","Budget-Friendly", "Top-Rated"],
+      link: "https://thebananadiaries.com/vegan-tiramisu/"
+    },
+
+    {
+      id: 13,
+      title: "Strawberry Sago",
+      image: "https://bitesbybianca.com/wp-content/uploads/2025/02/strawberry-sago-2.jpg",
+      cookTime: "25 Mins",
+      type: ["Top-Rated"],
+      link: "https://bitesbybianca.com/strawberry-sago/#recipe"
+    },
+
+    {
+      id: 14,
+      title: "Vegetable Curry Recipe",
+      image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/vegetable-curry-recipe.webp",
+      cookTime: "40 Mins",
+      type: ["Vegetarian"],
+      link: "https://www.indianhealthyrecipes.com/mixed-vegetable-curry/#wprm-recipe-container-38806"
+    },
+
+    {
+      id: 15,
+      title: "Maple Sweet Potato Salad with Whipped Tahini",
+      image: "https://www.recipetineats.com/tachyon/2025/06/Maple-sweet-potato-salad-with-whipped-tahini_4.jpg?resize=1200%2C1500&zoom=0.86",
+      cookTime: "40 Mins",
+      type: ["Vegetarian"],
+      link: "https://www.recipetineats.com/maple-sweet-potato-salad-with-whipped-tahini/#recipe"
+    },
+
+    {
+      id: 16,
+      title: "Pumpkin Soup",
+      image: "https://www.recipetineats.com/tachyon/2017/10/Pumpkin-Soup-6.jpg?resize=900%2C1260&zoom=1",
+      cookTime: "15 Mins",
+      type: ["Quick"],
+      link: "https://www.recipetineats.com/classic-pumpkin-soup/#recipe"
+    },
   ];
   const [results, setResults] = useState(defaultRecipes)
 
