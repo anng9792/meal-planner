@@ -1,16 +1,67 @@
-# React + Vite
+**Milestone 2: Process Blog Entry**
+Project 1 – Meal Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Team Members: Angelli Nguyen, Aria Brauchli, Autumn Bement
 
-Currently, two official plugins are available:
+**Thinking in React**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Step 1: Break the UI into a component hierarchy*
+Before starting to code, I planned the layout following the Thinking in React steps.
+The structure looks like this:
 
-## React Compiler
+App: main container that renders everything
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Searchbar: lets users type ingredients or use filters
 
-## Expanding the ESLint configuration
+Gallery: displays recipe cards
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+RecipeCard: shows recipe name, image, and time
+
+RecipeModal: opens when a card is clicked and shows ingredients and steps
+
+This breakdown helped clarify which components depend on each other and how data should flow.
+
+*Step 3: Identify the minimal representation of UI state*
+The main states are:
+
+searchInput: what the user types
+
+recipeList: recipes available inside the Gallery
+
+selectedRecipe: which recipe is clicked to open in the modal
+
+Everything else, like the visible recipes, can be derived from those.
+
+*Step 4: Identify where state should live*
+The App component holds the top level state and passes it down to children.
+RecipeCard doesn’t manage state itself, it just updates which recipe is selected.
+RecipeModal takes the selected recipe as props and displays it.
+
+This keeps data flow simple and makes debugging easier.
+
+**Progress and my contributions**
+
+![Meal Planner Wireframe](https://i.imgur.com/7biOk3B.png)
+
+
+Since Milestone 1, I focused on creating the RecipeCard and RecipeModal components.
+
+RecipeCard is reusable and displays recipe information pulled directly from inside the Gallery component for now. It is still in static form, and we are deciding whether it should link to the recipes or display the recipes and ingredients on each card.
+
+All the recipes have been added at this point.
+
+**Reflections and challenges**
+
+My biggest challenges so far have included linking VS Code and my Github. For some reason, I have bene having trouble with this. I managed to get it figured out today, so it should be smooth sailing. My teammates and I have had a little miscommunication about the information on the cards, so I plan to work this out and get a better understanding of their vision before Thursday.
+
+**Looking ahead**
+
+For the next milestone, my goals are:
+
+* connect the modal to real recipe information through props
+
+* clean up card styling and layout spacing
+
+* help connect the Searchbar input so recipes can be filtered by ingredients
+
+The app is starting to feel cohesive, and I’m confident about the structure we’ve built so far.
